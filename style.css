@@ -1,0 +1,255 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #333333;
+}
+
+
+header {
+    background: #110101;
+    color: white;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #2e04e6; /* turquoise */
+}
+
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+}
+
+.home-left {
+    width: 55%;
+}
+
+.home-left span {
+    color: #2e04e6;
+}
+
+.home-left .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #2e04e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.home-right img {
+    width: 200px;
+    border-radius: 100px;
+}
+
+
+.about {
+    background: #f2f2f7;
+    padding: 80px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #2e04e6;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    width: 55%;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.about-text .btn {
+    margin-top: 25px;
+    display: inline-block;
+    background: #2e04e6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-img img {
+    width: 220px;
+    border-radius: 50%;
+    border: 5px solid #2e04e6;
+}
+
+
+.projects {
+    padding: 80px;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #2e04e6;
+    margin-bottom: 40px;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card {
+    width: 30%;
+    background: #f2f2f7;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-card span {
+    display: block;
+    margin: 15px 0;
+    color: #555;
+}
+
+.project-card .btn {
+    background: #2e04e6;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+.skills {
+    background: #fafafa;
+    padding: 80px;
+}
+
+.skills h2 {
+    text-align: center;
+    color: #2e04e6;
+    margin-bottom: 40px;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-box {
+    width: 45%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.skills-box h3 {
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+.skills-box p {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.bar {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.bar div {
+    height: 100%;
+    background: #2e04e6;
+    border-radius: 5px;
+}
+
+
+.contact {
+    background: #0f0f0f;
+    padding: 80px;
+    color: white;
+    text-align: center;
+}
+
+.contact span {
+    color: #2e04e6;
+}
+
+#contact-form {
+    width: 60%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+#contact-form textarea {
+    height: 150px;
+}
+
+#contact-form button {
+    padding: 12px;
+    background: #2e04e6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact-form button:hover {
+    opacity: 0.8;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f2f2f7;
+    font-size: 0.9em;
+}

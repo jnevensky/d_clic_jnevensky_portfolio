@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur de prêt hypothécaire</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <h2>Calculateur de prêt hypothécaire</h2>
+    <label>Montant du prêt :</label>
+    <input type="number" id="montant"><br>
+    <label>Taux d'intérêt annuel (%) :</label>
+    <input type="number" id="taux"><br>
+    <label>Durée (années) :</label>
+    <input type="number" id="duree"><br>
+    <button onclick="calculerPret()">Calculer</button>
+    <p id="resultat"></p>
+
+    <script>
+        function calculerPret() {
+            let P = parseFloat(document.getElementById("montant").value);
+            let tauxAnnuel = parseFloat(document.getElementById("taux").value);
+            let annees = parseInt(document.getElementById("duree").value);
+
+            if(P <= 0 || tauxAnnuel < 0 || annees <= 0) {
+                alert("Veuillez saisir des valeurs valides.");
+                return;
+            }
+
+            let r = tauxAnnuel / 100 / 12;
+            let n = annees * 12;
+            let M = P * (r * Math.pow(1+r,n)) / (Math.pow(1+r,n) - 1);
+            document.getElementById("resultat").innerText = "Paiement mensuel : " + M.toFixed(2) + " unités monétaires";
+        }
+    </script>
+</body>
+</html>

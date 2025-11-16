@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulation de tableaux</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <h2>Manipulation de tableaux</h2>
+    <p id="tableau"></p>
+    <button onclick="ajouterElement()">Ajouter un élément</button>
+    <button onclick="supprimerElement()">Supprimer un élément</button>
+    <button onclick="trierTableau()">Trier le tableau</button>
+
+    <script>
+        let tab = [5, 2, 8, 1, 4];
+
+        function afficher() {
+            document.getElementById("tableau").innerText = "Tableau : " + tab.join(", ");
+        }
+
+        function ajouterElement() {
+            let valeur = parseInt(prompt("Entrez une valeur à ajouter :"));
+            if(!isNaN(valeur)) tab.push(valeur);
+            afficher();
+        }
+
+        function supprimerElement() {
+            let valeur = parseInt(prompt("Entrez la valeur à supprimer :"));
+            let index = tab.indexOf(valeur);
+            if(index !== -1) tab.splice(index,1);
+            afficher();
+        }
+
+        function trierTableau() {
+            tab.sort((a,b)=>a-b);
+            afficher();
+        }
+
+        afficher();
+    </script>
+</body>
+</html>
